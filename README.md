@@ -77,6 +77,12 @@ Net2 contains Net1 as a sub-network.
     * Take a look at phoneme dist. visualization on Tensorboard's image tab.
       * x-axis represents phoneme classes and y-axis represents timesteps
       * the first class of x-axis means silence.
+ * step1: train the model
+ python train2.py model_name
+ * step2: infer with trained model
+ python inference.py model_name
+ or if u want to selet a step-model
+ python inference model_name -ckpt=model-231040.data-00000-of-00001
 
 <p align="center"><img src="https://raw.githubusercontent.com/andabi/deep-voice-conversion/master/materials/phoneme_dist.png" width="30%"></p>
 
